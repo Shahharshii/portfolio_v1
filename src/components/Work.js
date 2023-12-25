@@ -1,0 +1,83 @@
+import React from 'react';
+import { motion } from 'framer-motion'
+import { fadeIn } from '../variants'
+import entre from '../assets/entre.png'
+import github from '../assets/github.png'
+import notes from '../assets/notes.png'
+import movie from '../assets/movie.png'
+
+
+const Work = () => {
+
+  const githb=()=>{
+    window.open('https://github.com/karan-2906')
+  }
+
+  return <section className='section' id='work'>
+    <div className="container mx-auto">
+      <div className='flex flex-col lg:flex-row  gap-x-10'>
+        <motion.div
+         variants={fadeIn('right', 0.3)}
+         initial="hidden"
+         whileInView={'show'}
+         viewport={{ once: false, amount: 0.3 }}
+        className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
+          <div>
+            <h2 className='h2 leading-tight text-accent'>My Projects.</h2>
+            <p className='max-w-sm mb-16 mt-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellat at, tenetur dicta laboriosam ab voluptatum. Earum temporibus qui ne</p>
+            <button className='btn btn-sm' onClick={githb}>View all Projects</button>
+          </div>
+          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl mt-2'>
+            {/* overlay */}
+            <a href="https://www.noteshare.online/" target="_blank">
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <img className='group-hover:scale-125 transition-all duration-500' src={notes} alt="" />
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-gradient '>Full Stack Project</span>
+              </div>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
+                <span className=' text-3xl text-white'>Noteshare</span>
+              </div>
+            </a>
+          </div>
+
+        </motion.div>
+        <motion.div
+         variants={fadeIn('left', 0.3)}
+         initial="hidden"
+         whileInView={'show'}
+         viewport={{ once: false, amount: 0.3 }}
+          className='flex-1 flex flex-col gap-y-10 '>
+          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+            {/* overlay */}
+            <a href="https://entrepreneursconnect.vercel.app/" target='_blank'>
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <img className='group-hover:scale-125 transition-all duration-500' src={entre} alt="" />
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-gradient '>Full Stack Project</span>
+              </div>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
+                <span className=' text-3xl text-white'>Entrepreneurs Connect</span>
+              </div>
+            </a>
+          </div>
+          <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+            {/* overlay */}
+            <a href="https://movie-finderbykaran.vercel.app/" target='_blank'>
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <img className='group-hover:scale-125 transition-all duration-500' src={movie} alt="" />
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-gradient '>FrontEnd Using APIs</span>
+              </div>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
+                <span className=' text-3xl text-white'>Movie Finder</span>
+              </div>
+            </a>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  </section>;
+};
+
+export default Work;
