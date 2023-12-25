@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../assets/avatar.svg'
-import { FaGithub, FaYoutube, FaDribbble } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 import {fadeIn} from '../variants'
@@ -34,14 +34,14 @@ const Banner = () => {
           <a href="" className='text-gradient btn-link'>My portfolio</a>
         </motion.div>
         <motion.div variants={fadeIn('up', 0.7)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.7}}  className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-          <a href="">
+          <a href="https://github.com/karan-2906" target='_blank'>
             <FaGithub className='text-2xl'/>
           </a>
-          <a href="">
-            <FaYoutube className='text-2xl'/>
+          <a href="https://www.linkedin.com/in/karan-gandhi-15082222a/" target='_blank'>
+            <FaLinkedin className='text-2xl'/>
           </a>
-          <a href="">
-            <FaDribbble className='text-2xl'/>
+          <a href="https://www.instagram.com/_karangandhi_/" target='_blank'>
+            <FaInstagram className='text-2xl'/>
           </a>
         </motion.div>
         </div>
