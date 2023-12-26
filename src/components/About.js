@@ -3,7 +3,6 @@ import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
-import about from '../assets/about.png'
 import { Link } from 'react-scroll';
 
 
@@ -22,15 +21,21 @@ const About = () => {
           viewport={{ once: false, amount: 0.3 }}
           className='flex-1 bg-contain bg-about bg-no-repeat h-[640px] mix-blend-lighten bg-top'>
           {/* <img src={about} alt="" className='h-[640px] mix-blend-lighten' /> */}
-          </motion.div>
+        </motion.div>
         <motion.div variants={fadeIn('left', 0.5)}
           initial="hidden"
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
           className='flex-1'>
           <h2 className='h2 text-accent'>About me.</h2>
-          <h3 className='h3 mb-4'>i'm a Web developer currently in Third Year pursuing IT Engineering</h3>
-          <p className='mb-6'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vero nulla perferendis numquam ullam laudantium, sequi, earum voluptatem, obcaecati iusto fugit possimus debitis incidunt modi odit odio dicta facere! Doloremque?</p>
+          <h3 className='h3 mb-4'>I'm a Web developer currently in Third Year pursuing IT Engineering</h3>
+          <p className='mb-6 font-medium text-justify'>Enthusiastic Student with superior skills in working in
+            both team-based and independent capacities.
+            Bringing strong work ethic and excellent organizational
+            skills to any setting. Excited to bring above average
+            user skills as web developer and designing.
+            Collaborative Intern offering strong analytical and
+            problem-solving abilities with high attention to detail</p>
           <div className=" flex gap-x-6 lg:gap-x-10 mb-12">
             <div>
               <div className='text-[40px] font-tertiary text-gradient mb-2'>

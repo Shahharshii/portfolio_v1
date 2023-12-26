@@ -28,7 +28,7 @@ const Banner = () => {
             repeat={Infinity}
             />
           </motion.div>
-          <motion.p variants={fadeIn('up', 0.5)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.7}}  className='mb-8 max-w-max mx-auto lg:mx-0'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit tempore architecto cum expedita, deserunt voluptatem.</motion.p>
+          {/* <motion.p variants={fadeIn('up', 0.5)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.7}}  className='mb-8 max-w-max mx-auto lg:mx-0'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit tempore architecto cum expedita, deserunt voluptatem.</motion.p> */}
         <motion.div variants={fadeIn('up', 0.6)} initial="hidden" whileInView={'show'} viewport={{once:false, amount:0.7}} className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
         <Link to='contact' smooth={true} spy={true} className='btn btn-lg flex items-center'> Contact Me </Link>
           <a href="" className='text-gradient btn-link'>My portfolio</a>

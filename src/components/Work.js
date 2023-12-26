@@ -9,7 +9,7 @@ import movie from '../assets/movie.png'
 
 const Work = () => {
 
-  const githb=()=>{
+  const githb = () => {
     window.open('https://github.com/karan-2906')
   }
 
@@ -17,14 +17,17 @@ const Work = () => {
     <div className="container mx-auto">
       <div className='flex flex-col lg:flex-row  gap-x-10'>
         <motion.div
-         variants={fadeIn('right', 0.3)}
-         initial="hidden"
-         whileInView={'show'}
-         viewport={{ once: false, amount: 0.3 }}
-        className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
+          variants={fadeIn('right', 0.3)}
+          initial="hidden"
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.3 }}
+          className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
           <div>
             <h2 className='h2 leading-tight text-accent'>My Projects.</h2>
-            <p className='max-w-sm mb-16 mt-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellat at, tenetur dicta laboriosam ab voluptatum. Earum temporibus qui ne</p>
+            <p className='max-w-sm mb-8 mt-8 text-justify'>Well-versed in creating Front-end design with
+              additional to some part of back-end. Diplomatic and
+              tactful with professionals and non-professionals at
+              various levels.</p>
             <button className='btn btn-sm' onClick={githb}>View all Projects</button>
           </div>
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl mt-2'>
@@ -43,10 +46,10 @@ const Work = () => {
 
         </motion.div>
         <motion.div
-         variants={fadeIn('left', 0.3)}
-         initial="hidden"
-         whileInView={'show'}
-         viewport={{ once: false, amount: 0.3 }}
+          variants={fadeIn('left', 0.3)}
+          initial="hidden"
+          whileInView={'show'}
+          viewport={{ once: false, amount: 0.3 }}
           className='flex-1 flex flex-col gap-y-10 '>
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
