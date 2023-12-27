@@ -1,6 +1,6 @@
 import React from 'react';
 import Logos from './Logos';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return <header className='py-8'>
