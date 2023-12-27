@@ -9,7 +9,7 @@ const Header = () => {
         <a href='#'>
           <Logos />
         </a>
-        <Link to='contact' smooth={true} spy={true} className='btn btn-sm'>
+        <Link to='contact' smooth={true} spy={true} className='btn btn-sm flex items-center'>
           Work with ME
         </Link>
       </div>
