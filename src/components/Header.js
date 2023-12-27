@@ -1,5 +1,6 @@
 import React from 'react';
 import Logos from './Logos';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return <header className='py-8'>
@@ -8,9 +9,9 @@ const Header = () => {
         <a href='#'>
           <Logos />
         </a>
-        <button className='btn btn-sm'>
+        <Link to='contact' smooth={true} spy={true} className='btn btn-sm'>
           Work with ME
-        </button>
+        </Link>
       </div>
     </div>
   </header>;
