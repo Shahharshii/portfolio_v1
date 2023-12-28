@@ -6,14 +6,15 @@ import { toast } from 'react-toastify';
 const host = process.env.REACT_APP_API_HOST;
 
 const Contact = () => {
-  const [client, setClient] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const formInitialDetails = {
+    name: "",
+    email: "",
+    message: "",
+  };
+  const [client, setClient] = useState(formInitialDetails);
+  const [buttonText, setButtonText] = useState("Send Message")
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
+  const handleChange = (name, value) => {
     setClient({
       ...client,
       [name]: value,
@@ -22,19 +23,20 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log('Handling form submission...', client);
+    setButtonText("Sending...")
     if (!client.name || !client.email || !client.message) {
       toast.error('Please fill in all fields');
       return;
     }
 
     try {
-      const response = await axios.post(`${host}/api/v1/client/clientreg`, {
+      const response = await axios.post(`${host}api/v1/client/clientreg`, {
         name: client.name,
         email: client.email,
         message: client.message,
       });
-
+      setButtonText("Send Message")
       if (response.status === 200) {
         toast.success(response.data.message);
         // Optionally, you can reload the page after a successful submission
@@ -47,6 +49,7 @@ const Contact = () => {
       toast.error(error.response?.data?.message || 'An error occurred while submitting the form');
     }
   };
+
 
   return (
     <section className='lg:section py-16' id='contact'>
@@ -76,26 +79,29 @@ const Contact = () => {
               placeholder='Your Name'
               type='text'
               id='name'
-              onChange={(e) => handleChange(e)}
+              value={client.name}
+              onChange={(e) => handleChange("name", e.target.value)}
               required
             />
             <input
               className='bg-transparent border-b py-3 outline-none w-full placeholder-white focus:border-accent transition-all'
               placeholder='Your Email'
-              type='text'
+              type='email'
               id='email'
-              onChange={(e) => handleChange(e)}
+              value={client.email}
+              onChange={(e) => handleChange("email", e.target.value)}
               required
             />
             <textarea
               className='bg-transparent border-b py-12 resize-none mb-12 outline-none w-full placeholder-white focus:border-accent transition-all'
               id='message'
-              onChange={(e) => handleChange(e)}
+              onChange={(e) => handleChange('message', e.target.value)}
               required
               placeholder='Your Message'
+              value={client.message}
               type='text'
             />
-            <button type='submit' className='btn btn-lg'> Send Message </button>
+            <button type='submit' className='btn btn-lg'>{buttonText}</button>
           </motion.form>
         </div>
       </div>
