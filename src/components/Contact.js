@@ -36,11 +36,17 @@ const Contact = () => {
         email: client.email,
         message: client.message,
       });
+      
       setButtonText("Send Message")
       if (response.status === 200) {
         toast.success(response.data.message);
-        window.location.reload();
-      } else {
+        const submissionCount = parseInt(localStorage.getItem('submissionCount')) || 0;
+      if (submissionCount >= 5) {
+        toast.error('Submission limit reached. You can submit up to 5 times.');
+        return;
+      }localStorage.setItem('submissionCount', submissionCount + 1);
+      setClient(formInitialDetails);
+    } else {
         toast.error(response.data.message);
       }
     } catch (error) {
