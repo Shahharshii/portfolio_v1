@@ -39,8 +39,7 @@ const Contact = () => {
       setButtonText("Send Message")
       if (response.status === 200) {
         toast.success(response.data.message);
-        // Optionally, you can reload the page after a successful submission
-        // window.location.reload();
+        window.location.reload();
       } else {
         toast.error(response.data.message);
       }
