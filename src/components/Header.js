@@ -9,7 +9,7 @@ const Header = () => {
         <a href='#'>
           <Logos />
         </a>
-        <Link to='contact' smooth={true} spy={true} className='btn btn-sm flex items-center'>
+        <Link to='contact' smooth={true} spy={true} className='btn btn-sm flex items-center ml-16'>
           Work with ME
         </Link>
       </div>
@@ -18,3 +18,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

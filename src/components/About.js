@@ -1,6 +1,6 @@
 import React from 'react';
 import CountUp from 'react-countup';
-import about from '../assets/about.png'
+import about1 from '../assets/about1.png'
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
@@ -14,14 +14,14 @@ const About = () => {
 
   return <section id='about' className='section' ref={ref}>
     <div className="container mx-auto">
-      <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
+      <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 min-h-screen">
         <motion.div
           variants={fadeIn('right', 0.3)}
           initial="hidden"
           whileInView={'show'}
           viewport={{ once: false, amount: 0.3 }}
-          className='flex-1 bg-contain bg-about bg-no-repeat h-[640px] mix-blend-lighten bg-top'>
-          {/* <img src={about} alt="" className='h-[640px] mix-blend-lighten' /> */}
+          className='hidden lg:block flex-1 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'>
+          <img src={about1} alt="" className='h-[640px] mix-blend-lighten' />
         </motion.div>
         <motion.div variants={fadeIn('left', 0.5)}
           initial="hidden"
@@ -29,14 +29,9 @@ const About = () => {
           viewport={{ once: false, amount: 0.3 }}
           className='flex-1'>
           <h2 className='h2 text-accent'>About me.</h2>
-          <h3 className='h3 mb-4'>I'm a Web developer currently in Third Year pursuing IT Engineering</h3>
-          <p className='mb-6 font-medium text-justify'>Enthusiastic Student with superior skills in working in
-            both team-based and independent capacities.
-            Bringing strong work ethic and excellent organizational
-            skills to any setting. Excited to bring above average
-            user skills as web developer and designing.
-            Collaborative Intern offering strong analytical and
-            problem-solving abilities with high attention to detail</p>
+          <h3 className='h3 mb-4'>I'm a Frontend Developer currently in my final year of IT Engineering.</h3>
+          <p className='mb-6 font-medium text-justify pb-4'> As an enthusiastic student, I excel in both team-based and independent work environments, bringing a strong work ethic and excellent organizational skills to any setting.
+            With a passion for crafting intuitive web experiences, I combine strong analytical and problem-solving abilities with high attention to detail. I’m eager to apply my skills in web development and design to create impactful and user-focused solutions.</p>
           <div className=" flex gap-x-6 lg:gap-x-10 mb-12">
             <div>
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
@@ -46,7 +41,7 @@ const About = () => {
             </div>
             <div>
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                {inview ? <p><CountUp start={0} end={5} duration={5} />+</p> : null}
+                {inview ? <p><CountUp start={0} end={3} duration={5} />+</p> : null}
 
               </div>
               <div className='font-primary text-sm tracking-[2px]'> Projects <br /> Completed</div>
