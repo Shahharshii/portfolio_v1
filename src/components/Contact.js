@@ -33,15 +33,15 @@ const Contact = () => {
       name: client.name,
       email: client.email,
       message: client.message,
+      to_email: client.email,
     };
 
-    emailjs
-      .send(
-        'service_z6jamtz', // Replace with your EmailJS service ID
-        'template_geulsyy', // Replace with your EmailJS template ID
-        templateParams,
-        'Harshi' // Replace with your EmailJS user ID
-      )
+    emailjs.send(
+      'service_r0xm4co', // Replace with your EmailJS service ID
+      'template_geulsyy', // Replace with your EmailJS template ID
+      templateParams,
+      'DvQRxby5tTeDw-n2V' // Replace with your EmailJS user ID
+    )
       .then((response) => {
         console.log('Email sent successfully:', response);
         toast.success('Message sent successfully!');
@@ -52,12 +52,28 @@ const Contact = () => {
           console.error('Error sending email:', error);
           toast.error('An error occurred while sending your message.');
           setButtonText('Send Message');
-        }
-      );
+        });
+
+    emailjs.send(
+      'service_r0xm4co', // Replace with your EmailJS service ID
+      'template_x9gds6t', // Replace with your EmailJS template ID
+      templateParams,
+      'DvQRxby5tTeDw-n2V' // Replace with your EmailJS user ID
+    )
+      .then((response) => {
+        console.log('Email sent successfully to admin :', response);
+      },
+        (error) => {
+          console.error('Error sending email:', error);
+        })
   };
+
 
   return (
     <section className='lg:section py-16' id='contact'>
+
+
+
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
           <motion.div
@@ -75,8 +91,7 @@ const Contact = () => {
                 Let's Work <br /> Together!
               </h2>
             </div>
-          </motion.div>
-          <motion.form
+          </motion.div>     <motion.form
             onSubmit={handleSubmit}
             variants={fadeIn('left', 0.3)}
             initial='hidden'
@@ -120,9 +135,6 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
-
 
 
 

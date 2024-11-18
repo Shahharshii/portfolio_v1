@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8f8c6b19.css",
+    "main.js": "/static/js/main.f37cd583.js",
+    "static/media/movie.png": "/static/media/movie.d9a6ed1838d2eccd7654.png",
+    "static/media/about1.png": "/static/media/about1.27e0b911b80abdc3bdc5.png",
+    "static/media/banner.png": "/static/media/banner.ff16ff6c3ce738257fce.png",
+    "static/media/site-bg.jpg": "/static/media/site-bg.54724d703024833ef9c6.jpg",
+    "static/media/notes.png": "/static/media/notes.f2b6353538e54166cf7c.png",
+    "static/media/github.png": "/static/media/github.2588e14145bea355c89e.png",
+    "static/media/entre.png": "/static/media/entre.528b6afc0aaffd05e579.png",
+    "static/media/resume.pdf": "/static/media/resume.b55b718923758ef9773c.pdf",
+    "static/media/services.png": "/static/media/services.ed74b00ea46564b94e06.png",
+    "static/media/powerbi-removebg-preview.png": "/static/media/powerbi-removebg-preview.7a1ba90f29599ab7b69c.png",
+    "static/media/nextjs-removebg-preview.png": "/static/media/nextjs-removebg-preview.02ecdc334258cc615e8e.png",
+    "static/media/typescript-removebg-preview-removebg-preview.png": "/static/media/typescript-removebg-preview-removebg-preview.32f9080a44ddfa3c86d7.png",
+    "static/media/react.svg": "/static/media/react.4ee8d0003d0f7f9ccea03ac4aa13fb99.svg",
+    "static/media/node.svg": "/static/media/node.2392983dc38f1c5a989eef634eceddbe.svg",
+    "index.html": "/index.html",
+    "static/media/mongo.svg": "/static/media/mongo.389aa18a9b02da23f02b77ddfc9d12be.svg",
+    "static/media/javascript.svg": "/static/media/javascript.19600440c8c62e3de974e2bba991871f.svg",
+    "static/media/css.svg": "/static/media/css.64fa1d1c4801d931c3717be71f6c020e.svg",
+    "static/media/html.svg": "/static/media/html.8ae3d4adcd70a1028a6377697d9f33b0.svg",
+    "main.8f8c6b19.css.map": "/static/css/main.8f8c6b19.css.map",
+    "main.f37cd583.js.map": "/static/js/main.f37cd583.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f8c6b19.css",
+    "static/js/main.f37cd583.js"
+  ]
+}

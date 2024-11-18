@@ -10,7 +10,7 @@ import movie from '../assets/movie.png'
 const Work = () => {
 
   const githb = () => {
-    window.open('https://github.com/karan-2906')
+    window.open('https://github.com/Shahharshii')
   }
 
   return <section className='section' id='work'>
@@ -84,3 +84,4 @@ const Work = () => {
 };
 
 export default Work;
+
