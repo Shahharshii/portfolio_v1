@@ -1,10 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
-import entre from '../assets/entre.png'
-import github from '../assets/github.png'
 import notes from '../assets/notes.png'
-import movie from '../assets/movie.png'
+import movie from '../assets/movie.jpg'
+import dashboard from '../assets/dashboard.jpg'
 
 
 const Work = () => {
@@ -32,14 +31,14 @@ const Work = () => {
           </div>
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl mt-2'>
             {/* overlay */}
-            <a href="https://www.noteshare.online/" target="_blank">
+            <a href="https://guess-game-gray.vercel.app/" target="_blank">
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='group-hover:scale-125 transition-all duration-500' src={notes} alt="" />
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient '>Full Stack Project</span>
+                <span className='text-gradient '>HTML and CSS</span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-                <span className=' text-3xl text-white'>Noteshare</span>
+                <span className=' text-3xl text-white'>Guess the Word</span>
               </div>
             </a>
           </div>
@@ -53,20 +52,20 @@ const Work = () => {
           className='flex-1 flex flex-col gap-y-10 '>
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
-            <a href="https://entrepreneursconnect.vercel.app/" target='_blank'>
+            <a href="https://power-bi-dashboards-eight.vercel.app/" target='_blank'>
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
-              <img className='group-hover:scale-125 transition-all duration-500' src={entre} alt="" />
+              <img className='group-hover:scale-125 transition-all duration-500' src={dashboard} alt="" />
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-gradient '>Full Stack Project</span>
+                <span className='text-gradient '>Power BI Dashboards</span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-                <span className=' text-3xl text-white'>Entrepreneurs Connect</span>
+                <span className=' text-3xl text-white'>Data Visualization</span>
               </div>
             </a>
           </div>
           <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
             {/* overlay */}
-            <a href="https://movie-finderbykaran.vercel.app/" target='_blank'>
+            <a href="https://moviesadda-harshi-shah.vercel.app/" target='_blank'>
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               <img className='group-hover:scale-125 transition-all duration-500' src={movie} alt="" />
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
