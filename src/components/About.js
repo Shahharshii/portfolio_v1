@@ -32,16 +32,16 @@ const About = () => {
           <h3 className='h3 mb-4'>I'm a Frontend Developer currently in my final year of IT Engineering.</h3>
           <p className='mb-6 font-medium text-justify pb-4'> As an enthusiastic student, I excel in both team-based and independent work environments, bringing a strong work ethic and excellent organizational skills to any setting.
             With a passion for crafting intuitive web experiences, I combine strong analytical and problem-solving abilities with high attention to detail. I’m eager to apply my skills in web development and design to create impactful and user-focused solutions.</p>
-          <div className=" flex gap-x-6 lg:gap-x-10 mb-12">
+          <div className=" flex gap-x-6 lg:gap-x-10 mb-12 pt-4">
             <div>
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                {inview ? <CountUp start={0} end={2} duration={6} /> : null}
+                {inview ? <CountUp start={0} end={2} duration={4} /> : null}
               </div>
               <div className='font-primary text-sm tracking-[2px]'> Years of <br /> Experience</div>
             </div>
             <div>
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                {inview ? <p><CountUp start={0} end={3} duration={5} />+</p> : null}
+                {inview ? <p><CountUp start={0} end={5} duration={5} />+</p> : null}
 
               </div>
               <div className='font-primary text-sm tracking-[2px]'> Projects <br /> Completed</div>
