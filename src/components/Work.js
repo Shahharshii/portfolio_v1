@@ -38,7 +38,7 @@ const Work = () => {
                 <span className='text-gradient '>HTML and CSS</span>
               </div>
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-                <span className=' text-3xl text-white'>Guess the Word</span>
+                <span className=' text-3xl text-white'>Guess the Word Game</span>
               </div>
             </a>
           </div>
