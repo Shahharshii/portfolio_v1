@@ -41,7 +41,7 @@ const About = () => {
             </div>
             <div>
               <div className='text-[40px] font-tertiary text-gradient mb-2'>
-                {inview ? <p><CountUp start={0} end={5} duration={5} />+</p> : null}
+                {inview ? <p><CountUp start={0} end={5} duration={6} />+</p> : null}
 
               </div>
               <div className='font-primary text-sm tracking-[2px]'> Projects <br /> Completed</div>

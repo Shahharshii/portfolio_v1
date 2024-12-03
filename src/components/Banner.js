@@ -7,6 +7,7 @@ import { fadeIn } from '../variants'
 import { Link } from 'react-scroll';
 import resume from '../assets/resume.pdf'
 
+
 const Banner = () => {
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center m-5' id='home'>
     <div className='contianer mx-auto'>
